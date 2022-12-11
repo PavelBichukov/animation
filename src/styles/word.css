@@ -1,0 +1,122 @@
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.word__box {
+    animation-name: letter-box;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.word__letter {
+    color: white;
+    font-size: 50px;
+}
+
+.letter-t {
+    animation-name: letter-t;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.letter-m {
+    animation-name: letter-m;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.letter-s {
+    animation-name: letter-s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes letter-t {
+    0% {
+        transform: translateY(200px);
+    }
+
+    50% {
+        transform: translateY(0);
+        color: black;
+    }
+
+    75% {
+        transform: translateY(0);
+        color: black;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+@keyframes letter-m {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(0);
+        color: black;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+@keyframes letter-s {
+    0% {
+        transform: translateX(200px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+@keyframes letter-box {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    65% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: rgb(243, 208, 10);
+        border: 1px solid;
+    }
+}

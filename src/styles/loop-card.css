@@ -1,0 +1,40 @@
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading__card {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(241, 245, 241);
+    border-radius: 50%;
+    animation-name: loop;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.loop-first {
+    animation-delay: 0.1s;
+}
+
+.loop-second {
+    animation-delay: 0.45s;
+}
+
+.loop-third {
+    animation-delay: 0.9s;
+}
+
+@keyframes loop {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}

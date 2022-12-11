@@ -1,0 +1,78 @@
+.jumping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 0;
+    background-color: #297051;
+    ;
+
+}
+
+.jumping__circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(227, 228, 61);
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 0px 10px #297051;
+}
+
+.jumping__square {
+    width: 60px;
+    height: 120px;
+    background-color: rgb(227, 228, 61);
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes circle {
+    from {
+        transform: translateY(-20px);
+
+    }
+
+    50% {
+        transform: translateY(20px);
+        width: 70px;
+        background-color: rgb(56, 216, 169);
+    }
+
+    75% {
+        width: 60px;
+    }
+
+    to {
+        transform: translateY(-20px);
+        ;
+    }
+}
+
+@keyframes square {
+
+    20% {
+        transform: rotate(180deg);
+    }
+
+    25% {
+        background-color: rgb(56, 216, 169);
+    }
+
+    50% {
+        background-color: rgb(227, 228, 61);
+    }
+
+    80% {
+        background-color: rgb(56, 216, 169);
+    }
+
+    100% {
+        transform: rotate(180deg);
+
+    }
+}

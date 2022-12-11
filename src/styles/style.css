@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    background: rgb(18, 213, 194);
+    background: linear-gradient(0deg, rgba(18, 213, 194, 1) 0%, rgba(253, 230, 45, 1) 100%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 15px 15px;
+}
+
+.animation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.animation__card {
+    background-color: rgba(44, 40, 40, 0.63);
+    min-height: 290px;
+    min-width: 290px;
+    border: 3px solid white;
+    border-radius: 20px;
+}

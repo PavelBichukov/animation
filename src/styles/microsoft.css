@@ -1,0 +1,191 @@
+.microsoft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.microsoft-squarebox {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.microsoft-square {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.microsoft-square--red {
+    background: rgb(242, 80, 34);
+    animation-name: red;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.microsoft-square--green {
+    background: rgb(127, 186, 0);
+    animation-name: green;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    animation-iteration-count: infinite;
+}
+
+.microsoft-square--yellow {
+    background: rgb(255, 185, 1);
+    animation-name: yellow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.microsoft-square--blue {
+    background: rgb(1, 164, 239);
+    animation-name: blue;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.microsoft__name {
+    font-size: 33px;
+    color: transparent;
+    animation-name: name;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name {
+    0% {
+        color: transparent;
+    }
+
+    20% {
+        color: transparent;
+    }
+
+    40% {
+        tcolor: transparent;
+        ;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    75% {
+        color: transparent;
+    }
+
+    100% {
+        color: grey;
+    }
+}
+
+@keyframes green {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(55px);
+    }
+
+    40% {
+        transform: translateX(55px);
+    }
+
+    60% {
+        transform: translateX(55px);
+    }
+
+    80% {
+        transform: translateX(55px);
+    }
+
+    100% {
+        transform: translateX(55px);
+    }
+}
+
+@keyframes yellow {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(55px);
+    }
+
+    40% {
+        transform: translate(55px, 55px);
+    }
+
+    60% {
+        ransform: translate(55px, 55px);
+    }
+
+    80% {
+        transform: translate(55px, 55px);
+    }
+
+    100% {
+        transform: translate(55px, 55px);
+    }
+}
+
+@keyframes blue {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(55px);
+    }
+
+    40% {
+        transform: translate(55px, 55px);
+    }
+
+    60% {
+        transform: translate(0, 55px);
+    }
+
+    80% {
+        transform: translate(0, 55px);
+    }
+
+    100% {
+        transform: translate(0, 55px);
+    }
+
+}
+
+@keyframes red {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(55px);
+    }
+
+    40% {
+        transform: translate(55px, 55px);
+    }
+
+    60% {
+        transform: translate(0, 55px);
+    }
+
+    80% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
